@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;
+        color: blueviolet; background-color: aqua;}
+        button:hover {
+            color: aqua; background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+   <h2>Trabalhando com Dado</h2>
+   <button onclick="inicio()">Clique aqui para começar</button>
+   <section id="resultado">
+       <p> Aqui aparecera o resultado... </p>
+   </section>
+   <script>
+       function inicio() {
+           let nome = window.prompt('Qual é o seu nome?')
+           let res = window.document.getElementById('resultado')
+           res.innerHTML = `<p>Ola, <strong>${nome}</strong>!É um grande prazer te conhecer!`
+       }
+   </script>
+</body>
+</html>
